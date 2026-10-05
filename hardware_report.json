@@ -1,0 +1,13 @@
+{
+  "os": "Windows 11 (AMD64)",
+  "cpu": "AMD Ryzen 3 7320U with Radeon Graphics",
+  "cores": 8,
+  "ram_gb": 7.2,
+  "gpu": {
+    "kind": "none",
+    "name": "No supported discrete GPU detected",
+    "vram_gb": null
+  },
+  "disk_free_gb": 222.5,
+  "python": "3.13.0"
+}

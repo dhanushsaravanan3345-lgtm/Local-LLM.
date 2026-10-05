@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Local AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<aside id="sidebar">
+  <div class="brand">🤖 My Local AI</div>
+  <button id="newChat" class="primary">＋ New Chat</button>
+  <nav>
+    <h4>Recent Chats</h4>
+    <ul id="chatList"></ul>
+    <h4>Documents</h4>
+    <ul id="docList"></ul>
+    <label class="upload">＋ Upload document
+      <input id="fileInput" type="file" accept=".pdf,.txt,.md,.markdown,.docx" hidden>
+    </label>
+    <div id="uploadMsg" class="muted small"></div>
+    <h4>Settings</h4>
+    <label class="small">Model</label>
+    <select id="modelSelect"></select>
+    <label class="small">System prompt</label>
+    <textarea id="sysPrompt" rows="5"></textarea>
+    <button id="savePrompt">Save prompt</button>
+    <label class="small check"><input type="checkbox" id="useDocs" checked> Use my documents</label>
+    <button id="themeBtn">Toggle dark mode</button>
+  </nav>
+</aside>
+
+<main>
+  <header>
+    <button id="menuBtn" aria-label="Menu">☰</button>
+    <div class="title">🤖 My Local AI <span id="localBadge" class="badge">● Local</span></div>
+    <div id="modelInfo" class="muted small"></div>
+    <button id="clearBtn" title="Clear this chat">🗑 Clear chat</button>
+  </header>
+  <div id="messages" aria-live="polite"></div>
+  <div id="banner" class="banner" hidden></div>
+  <form id="composer">
+    <textarea id="input" rows="1" placeholder="Ask your local AI anything…" maxlength="8000"></textarea>
+    <button id="sendBtn" class="primary" type="submit">Send</button>
+    <button id="stopBtn" type="button" hidden>■ Stop</button>
+  </form>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

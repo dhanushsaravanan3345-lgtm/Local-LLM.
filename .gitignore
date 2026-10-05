@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+data/app.db*
+data/documents/*
+!data/documents/.gitkeep
+models/*
+!models/.gitkeep
+.pytest_cache/
+.env.example
